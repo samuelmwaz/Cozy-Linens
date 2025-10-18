@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Comfort Linens</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind with the new warm color scheme -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // New Coffee/Espresso Colors
+                        'primary-brown': '#3d1804', // Dark Espresso Brown for branding/headers
+                        'accent-latte': '#d1a585',  // Warm Latte Cream for accents/CTAs
+                        'bg-light': '#fcf7f3',      // Soft Beige/Cream background
+                        'bg-dark': '#2c1208',       // Deep Coffee Ground for footer
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for aesthetics */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #9ca3af;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+  <p class="mt-4 text-gray-400">
+                Contact us: 
+                <p>phone number:+260967715099</p>
+                <a href="fridahkyakilikam@gmail.com" class="text-accent-latte hover:text-white transition duration-300 font-medium">fridahkyakilikam@gmail.com</a>
+            </p>
+<body class="bg-bg-light font-sans text-gray-800 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-10 bg-white shadow-lg">
+        <div class="container mx-auto flex items-center justify-between p-4 max-w-7xl">
+            <!-- Updated logo color to Espresso Brown -->
+            <a href="#" class="text-3xl font-extrabold text-primary-brown tracking-tight">Cozy Linens</a>
+            <nav class="hidden md:flex space-x-6 text-lg font-medium">
+                <!-- Updated hover color to Latte Cream -->
+                <a href="#collection" class="text-gray-600 hover:text-accent-latte transition duration-300">Shop</a>
+                <a href="#" class="text-gray-600 hover:text-accent-latte transition duration-300">About Us</a>
+                <a href="#" class="text-gray-600 hover:text-accent-latte transition duration-300">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <!-- CHANGED: Replaced Shopping Bag with Mail Icon for Inquiry -->
+                <a href="mailto:sales@cozylinens.com" class="text-gray-600 hover:text-accent-latte">
+                    <!-- Mail Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.83 1.83 0 0 1-2.06 0L2 7"/></svg>
+                </a>
+                <button class="md:hidden text-gray-600 hover:text-accent-latte">
+                    <!-- Mobile Menu Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section: Uses your original image to showcase the full collection -->
+    <section class="relative overflow-hidden pt-12 pb-20 md:pt-16 lg:pt-24 bg-accent-latte/30">
+        <div class="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center justify-between gap-8">
+            <!-- Text Content -->
+            <div class="md:w-1/2 lg:w-2/5 text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight mb-4">
+                    Sleep in Style with Our <span class="text-accent-latte">Latest Collection</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Discover a stunning array of premium bedsheets, featuring bold stripes, playful dots, and elegant florals to transform your bedroom.
+                </p>
+                <!-- Updated CTA button to Espresso Brown -->
+                <a href="#collection" class="inline-block px-8 py-3 bg-primary-brown text-white font-semibold rounded-full shadow-xl hover:bg-primary-brown/80 transition duration-300 transform hover:scale-105">
+                    View The Collection
+                </a>
+            </div>
+            <!-- Image Display -->
+            <div class="md:w-1/2 lg:w-3/5">
+                <div class="bg-white p-4 rounded-3xl shadow-2xl transform rotate-1 transition-transform duration-500 hover:rotate-0">
+                    <!-- The original group image is used here for variety -->
+                    <img src="images/Gemini_Generated_Image_z08qx1z08qx1z08q.png" alt="Collection of bedsheets with various patterns" class="w-full h-auto rounded-2xl object-cover max-h-[400px]" onerror="this.onerror=null;this.src='https://placehold.co/800x400/3d1804/ffffff?text=Product+Collection+Preview';" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid Section: Now featuring 8 actual product images -->
+    <section id="collection" class="py-16 lg:py-24 px-4">
+        <div class="container mx-auto max-w-7xl">
+            <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Our Featured Designs</h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                
+                <!-- Card 1: Coral & White Stripe (Source: 20251018_152110.jpg) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group transform hover:scale-[1.02] hover:skew-y-1 hover:ring-2 hover:ring-accent-latte hover:ring-offset-2">
+                    <img src=" images/20251018_152110.jpg" alt="Coral and White Striped Bedsheet" class="w-full h-48 object-cover rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/FF5733/F7B2B2?text=Coral+Stripe+Sheet';" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-accent-latte transition duration-300">Coral Sunset Stripe</h3>
+                        <p class="text-gray-500 mt-1 mb-3 text-sm">Egyptian Cotton Blend</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900">k600</span>
+                            <!-- UPDATED BUTTON: Email Link -->
+                            <a href="mailto:sales@cozylinens.com?subject=Inquiry%20about%20Coral%20Sunset%20Stripe" class="px-4 py-2 bg-accent-latte text-white font-medium rounded-lg shadow-md hover:bg-accent-latte/80 transition duration-300 text-sm flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.83 1.83 0 0 1-2.06 0L2 7"/></svg>
+                                <span>Inquire</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Navy Polka Dots (Source: 20251018_152050.jpg) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group transform hover:scale-[1.02] hover:skew-y-1 hover:ring-2 hover:ring-accent-latte hover:ring-offset-2">
+                    <img src="images/20251018_152050.jpg" alt="Playful Navy Polka Dot Bedsheet" class="w-full h-48 object-cover rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e40af/FFFFFF?text=Navy+Dot+Sheet';" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-accent-latte transition duration-300">Playful Navy Dots</h3>
+                        <p class="text-gray-500 mt-1 mb-3 text-sm">Microfiber, Wrinkle-Resistant</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900">k600</span>
+                            <!-- UPDATED BUTTON: Email Link -->
+                            <a href="mailto:sales@cozylinens.com?subject=Inquiry%20about%20Playful%20Navy%20Dots" class="px-4 py-2 bg-accent-latte text-white font-medium rounded-lg shadow-md hover:bg-accent-latte/80 transition duration-300 text-sm flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.83 1.83 0 0 1-2.06 0L2 7"/></svg>
+                                <span>Inquire</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Tropical Floral (Source: 20251018_152130.jpg) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group transform hover:scale-[1.02] hover:skew-y-1 hover:ring-2 hover:ring-accent-latte hover:ring-offset-2">
+                    <img src=" images/20251018_152130.jpg" alt="Exotic Palm Leaves Bedsheet" class="w-full h-48 object-cover rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/228B22/E74C3C?text=Tropical+Sheet';" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-accent-latte transition duration-300">Exotic Palm Leaves</h3>
+                        <p class="text-gray-500 mt-1 mb-3 text-sm">Bamboo Viscose, Cooling</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900">k600</span>
+                            <!-- UPDATED BUTTON: Email Link -->
+                            <a href="mailto:sales@cozylinens.com?subject=Inquiry%20about%20Exotic%20Palm%20Leaves" class="px-4 py-2 bg-accent-latte text-white font-medium rounded-lg shadow-md hover:bg-accent-latte/80 transition duration-300 text-sm flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.83 1.83 0 0 1-2.06 0L2 7"/></svg>
+                                <span>Inquire</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4: Light Blue Solid (Source: 20251018_152123.jpg) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group transform hover:scale-[1.02] hover:skew-y-1 hover:ring-2 hover:ring-accent-latte hover:ring-offset-2">
+                    <img src="images/20251018_152123.jpg" alt="Deep Navy Solid Bedsheet" class="w-full h-48 object-cover rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ADD8E6/FFFFFF?text=Solid+Blue+Sheet';" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-accent-latte transition duration-300">Deep Midnight Solid</h3>
+                        <p class="text-gray-500 mt-1 mb-3 text-sm">300 Thread Count Percale</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900">k600</span>
+                            <!-- UPDATED BUTTON: Email Link -->
+                            <a href="mailto:sales@cozylinens.com?subject=Inquiry%20about%20Deep%20Midnight%20Solid" class="px-4 py-2 bg-accent-latte text-white font-medium rounded-lg shadow-md hover:bg-accent-latte/80 transition duration-300 text-sm flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.83 1.83 0 0 1-2.06 0L2 7"/></svg>
+                                <span>Inquire</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5: Monochrome Stripes (Source: 20251018_152154.jpg) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group transform hover:scale-[1.02] hover:skew-y-1 hover:ring-2 hover:ring-accent-latte hover:ring-offset-2">
+                    <img src="images/20251018_152105.jpg" alt="Black and White Monochrome Stripe Bedsheet" class="w-full h-48 object-cover rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/000000/FFFFFF?text=Mono+Stripe+Sheet';" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-accent-latte transition duration-300">Classic Monochrome</h3>
+                        <p class="text-gray-500 mt-1 mb-3 text-sm">Sateen Finish, Silky Feel</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900">k600</span>
+                            <!-- UPDATED BUTTON: Email Link -->
+                            <a href="mailto:sales@cozylinens.com?subject=Inquiry%20about%20Classic%20Monochrome" class="px-4 py-2 bg-accent-latte text-white font-medium rounded-lg shadow-md hover:bg-accent-latte/80 transition duration-300 text-sm flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.83 1.83 0 0 1-2.06 0L2 7"/></svg>
+                                <span>Inquire</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6: Blue Geometric Print (Source: 20251018_152202.jpg) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group transform hover:scale-[1.02] hover:skew-y-1 hover:ring-2 hover:ring-accent-latte hover:ring-offset-2">
+                    <img src="images/20251018_152202.jpg" alt="White and Blue Geometric Print Bedsheet" class="w-full h-48 object-cover rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ADD8E6/0000FF?text=Geo+Print+Sheet';" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-accent-latte transition duration-300">Geo Diamond Print</h3>
+                        <p class="text-gray-500 mt-1 mb-3 text-sm">Lightweight Cotton</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900">k600</span>
+                            <!-- UPDATED BUTTON: Email Link -->
+                            <a href="mailto:sales@cozylinens.com?subject=Inquiry%20about%20Geo%20Diamond%20Print" class="px-4 py-2 bg-accent-latte text-white font-medium rounded-lg shadow-md hover:bg-accent-latte/80 transition duration-300 text-sm flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.83 1.83 0 0 1-2.06 0L2 7"/></svg>
+                                <span>Inquire</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7: Blue Border Stripe Set (Source: 20251018_152149.jpg) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group transform hover:scale-[1.02] hover:skew-y-1 hover:ring-2 hover:ring-accent-latte hover:ring-offset-2">
+                    <img src="images/20251018_152149.jpg" alt="Light Blue Bedsheet with Dark Blue Border" class="w-full h-48 object-cover rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ADD8E6/00008B?text=Border+Sheet';" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-accent-latte transition duration-300">Coastal Border Set</h3>
+                        <p class="text-gray-500 mt-1 mb-3 text-sm">Premium Linen Blend</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900">k600</span>
+                            <!-- UPDATED BUTTON: Email Link -->
+                            <a href="mailto:sales@cozylinens.com?subject=Inquiry%20about%20Coastal%20Border%20Set" class="px-4 py-2 bg-accent-latte text-white font-medium rounded-lg shadow-md hover:bg-accent-latte/80 transition duration-300 text-sm flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.83 1.83 0 0 1-2.06 0L2 7"/></svg>
+                                <span>Inquire</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 8: Tribal Floral Pattern (Source: 20251018_152141.jpg) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden group transform hover:scale-[1.02] hover:skew-y-1 hover:ring-2 hover:ring-accent-latte hover:ring-offset-2">
+                    <img src="images/20251018_152046.jpg" alt="Rust and Blue Tribal Pattern Bedsheet" class="w-full h-48 object-cover rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/B5651D/ADD8E6?text=Tribal+Sheet';" loading="lazy">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 group-hover:text-accent-latte transition duration-300">Desert Dream Pattern</h3>
+                        <p class="text-gray-500 mt-1 mb-3 text-sm">Breathable Brushed Cotton</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-2xl font-bold text-gray-900">k600</span>
+                            <!-- UPDATED BUTTON: Email Link -->
+                            <a href="mailto:sales@cozylinens.com?subject=Inquiry%20about%20Desert%20Dream%20Pattern" class="px-4 py-2 bg-accent-latte text-white font-medium rounded-lg shadow-md hover:bg-accent-latte/80 transition duration-300 text-sm flex items-center space-x-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.83 1.83 0 0 1-2.06 0L2 7"/></svg>
+                                <span>Inquire</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="bg-primary-brown mt-16 py-12 px-4">
+        <div class="container mx-auto max-w-7xl text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Quality Sleep, Guaranteed.</h2>
+            <p class="text-lg text-primary-brown/50 mb-8">Sign up for our newsletter and get 15% off your first order!</p>
+            <form class="flex justify-center max-w-xl mx-auto">
+                <input type="email" placeholder="Enter your email address" class="w-full p-3 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-accent-latte" required>
+                <button type="submit" class="p-3 bg-accent-latte text-white font-semibold rounded-r-lg hover:bg-accent-latte/80 transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-bg-dark text-white py-10 mt-0">
+        <div class="container mx-auto px-4 max-w-7xl text-center text-sm">
+            <p>&copy; 2025 Cozy Linens. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-accent-latte transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-accent-latte transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-accent-latte transition duration-300">Shipping & Returns</a>
+            </div>
+            <!-- Added Contact Email to Footer -->
+            <p class="mt-4 text-gray-400">
+                Contact us: 
+                <p>phone number:+260967715099</p>
+                <a href="fridahkyakilikam@gmail.com" class="text-accent-latte hover:text-white transition duration-300 font-medium">fridahkyakilikam@gmail.com</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+com
